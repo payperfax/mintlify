@@ -1,0 +1,178 @@
+---
+title: "How It Works"
+description: "Understanding the PayPerFax process from start to finish"
+icon: "circle-info"
+---
+
+Learn how PayPerFax sends your documents securely and reliably to any fax machine worldwide.
+
+## The complete process
+
+<Steps>
+  <Step title="You submit your fax">
+    1. Upload your document (PDF, DOC, DOCX, TIF, or JPEG)
+    2. Enter destination fax number and your email
+    3. Optionally create a cover page
+    4. Preview the processed fax
+  </Step>
+
+  <Step title="We process your document">
+    - Convert your document to fax format (204×196 dpi, black & white)
+    - Calculate exact page count and pricing
+    - Generate a preview for your review
+    - Process takes 30-60 seconds
+  </Step>
+
+  <Step title="You authorize payment">
+    - Choose credit card or PayPal
+    - A temporary hold is placed (not an immediate charge)
+    - No payment is taken until fax succeeds
+  </Step>
+
+  <Step title="We transmit your fax">
+    - Your fax enters our sending queue
+    - Transmitted using fine quality setting (204×196 dpi)
+    - Average transmission: 30-60 seconds per page
+    - Automatic retry on busy/failed attempts (up to 3 times)
+  </Step>
+
+  <Step title="You receive confirmation">
+    - Real-time tracking on the web
+    - Email notification when complete
+    - PDF copy of the transmitted fax
+    - Full transmission details (date, time, recipient CSID)
+  </Step>
+</Steps>
+
+## Payment process explained
+
+<Accordion title="How authorization holds work" icon="credit-card">
+When you submit a fax, we place a **temporary authorization hold** on your card for the fax cost:
+
+- **If fax succeeds**: The hold converts to an actual charge
+- **If fax fails**: The hold is released, you pay nothing
+
+This ensures you only pay for successful deliveries.
+
+<Note>
+Authorization holds may take some time to clear from your account depending on your card issuer. This is normal banking practice.
+</Note>
+</Accordion>
+
+<Accordion title="When am I charged?" icon="dollar-sign">
+You are charged **only when your fax successfully transmits** to the destination.
+
+**Success** means:
+- The receiving fax machine answered
+- The handshake completed
+- All pages were transmitted
+- The receiving machine confirmed receipt
+
+**Failure** means:
+- Receiving fax machine didn't answer (after 3 attempts)
+- Line was busy (after 3 attempts)
+- Transmission was interrupted
+- Receiving machine rejected the fax
+</Accordion>
+
+<Accordion title="Automatic retry attempts" icon="rotate">
+If your fax fails on the first attempt, PayPerFax automatically retries:
+
+- **Attempt 1**: Immediate (when you click send)
+- **Attempt 2**: A few minutes later
+- **Attempt 3**: A few minutes after attempt 2
+
+This helps ensure delivery even if the destination is temporarily busy or offline.
+</Accordion>
+
+## Security & privacy
+
+<CardGroup cols={2}>
+  <Card title="SSL Encryption" icon="lock">
+    All document transfers use verified SSL certificates for secure transmission
+  </Card>
+  <Card title="Automatic Deletion" icon="trash">
+    Documents are automatically deleted from our servers within 30 days
+  </Card>
+  <Card title="No Account Required" icon="user-slash">
+    No login credentials stored, no personal data collected beyond transaction needs
+  </Card>
+  <Card title="Payment Security" icon="shield">
+    Credit card processing handled by trusted payment providers (Stripe/PayPal)
+  </Card>
+</CardGroup>
+
+## Technical specifications
+
+<Accordion title="Fax quality settings" icon="image">
+**Resolution**: 204×196 dpi (fine quality)
+
+This is the standard resolution for fax transmission worldwide. While it appears lower quality than modern documents (typically 300+ dpi), it's designed for readability on fax machines.
+
+<Info>
+Faxes may look pixelated on screen but are readable in 99% of cases. Learn more in [Why Confirmations Look Low Quality](/troubleshooting/low-quality-confirmations).
+</Info>
+</Accordion>
+
+<Accordion title="Supported file formats" icon="file">
+- **PDF**: Most reliable format
+- **DOC/DOCX**: Microsoft Word documents
+- **TIF/TIFF**: Tagged Image Format (G3 compression)
+- **JPG/JPEG**: Image files
+
+**Maximum file size**: 8MB per upload
+
+See [File Requirements](/sending-faxes/file-requirements) for detailed specifications.
+</Accordion>
+
+<Accordion title="Service availability" icon="clock">
+- **24/7 operation**: Send faxes any time, day or night
+- **130+ countries**: Worldwide coverage
+- **Average transmission time**: 30-60 seconds per page
+- **Support hours**: Monday-Friday 09:00-17:00 GMT
+</Accordion>
+
+## Why no registration?
+
+PayPerFax is designed for **occasional fax senders** who don't want the hassle of:
+- Creating accounts
+- Managing subscriptions
+- Remembering passwords
+- Paying monthly fees (even when not using the service)
+
+<Tip>
+This means we can't offer manual fax resubmission. If your fax fails after 3 automatic attempts, you'll need to submit it again through the web form.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Send Your First Fax"
+    icon="rocket"
+    href="/getting-started/quick-start"
+  >
+    Quick start guide
+  </Card>
+  <Card
+    title="Detailed Instructions"
+    icon="list-check"
+    href="/sending-faxes/step-by-step-guide"
+  >
+    Step-by-step with screenshots
+  </Card>
+  <Card
+    title="View Pricing"
+    icon="dollar-sign"
+    href="/pricing/pricing-structure"
+  >
+    Complete pricing breakdown
+  </Card>
+  <Card
+    title="Troubleshooting"
+    icon="wrench"
+    href="/troubleshooting/common-issues"
+  >
+    Common issues and solutions
+  </Card>
+</CardGroup>

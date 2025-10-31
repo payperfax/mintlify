@@ -1,0 +1,332 @@
+---
+title: "Common Issues"
+description: "Quick solutions to frequently encountered problems"
+icon: "wrench"
+---
+
+Find solutions to common problems when using PayPerFax.
+
+## Quick troubleshooting
+
+<CardGroup cols={2}>
+  <Card
+    title="Fax Marked as Sent But Not Received"
+    icon="question"
+    href="/troubleshooting/fax-not-received"
+  >
+    Your fax shows successful but recipient didn't get it
+  </Card>
+  <Card
+    title="Low Quality Confirmations"
+    icon="image"
+    href="/troubleshooting/low-quality-confirmations"
+  >
+    Why your fax PDF looks pixelated
+  </Card>
+  <Card
+    title="How to Resend a Fax"
+    icon="rotate"
+    href="/troubleshooting/resending-faxes"
+  >
+    Steps to resend a failed fax
+  </Card>
+  <Card
+    title="Payment Hold Issues"
+    icon="credit-card"
+    href="/pricing/payment-holds"
+  >
+    Understanding charges after failed faxes
+  </Card>
+</CardGroup>
+
+## File upload issues
+
+<AccordionGroup>
+  <Accordion title="File too large (over 8MB)" icon="file">
+    **Error**: "File size exceeds maximum"
+
+    **Solutions**:
+    - Compress your PDF using online tools or Adobe Acrobat
+    - Reduce image resolution/quality before converting to PDF
+    - Split into multiple smaller faxes
+    - Remove unnecessary pages or images
+  </Accordion>
+
+  <Accordion title="File format not accepted" icon="ban">
+    **Error**: "Unsupported file format"
+
+    **Supported formats**: PDF, DOC, DOCX, TIF, JPEG
+
+    **Solutions**:
+    - Convert your file to PDF (recommended)
+    - Export as JPEG if it's an image
+    - Use Microsoft Word if it's a document
+    - Check file extension is correct (.pdf not .PDF.txt)
+  </Accordion>
+
+  <Accordion title="Upload fails or times out" icon="clock">
+    **Problem**: File upload doesn't complete
+
+    **Solutions**:
+    - Check your internet connection
+    - Try a smaller file
+    - Use a different browser
+    - Clear browser cache and cookies
+    - Disable browser extensions temporarily
+    - Try from a different device/network
+  </Accordion>
+</AccordionGroup>
+
+## Preview and pricing issues
+
+<AccordionGroup>
+  <Accordion title="Preview taking too long" icon="hourglass">
+    **Normal**: Preview can take 30-60 seconds
+
+    **If longer than 2 minutes**:
+    - Refresh the page and try again
+    - Your file might be complex or large
+    - Try with a simpler/smaller file first
+    - Check internet connection speed
+  </Accordion>
+
+  <Accordion title="Preview looks wrong or broken" icon="triangle-exclamation">
+    **Common causes**:
+    - Complex document formatting
+    - Colored backgrounds converting poorly
+    - Tiny fonts becoming unreadable
+    - Graphics not compatible with fax format
+
+    **Solutions**:
+    - Simplify your document layout
+    - Use black text on white background
+    - Increase font size (12pt minimum)
+    - Convert to high-contrast PDF before uploading
+
+    See [File Requirements](/sending-faxes/file-requirements) for tips.
+  </Accordion>
+
+  <Accordion title="Price seems wrong" icon="dollar-sign">
+    **Remember**:
+    - Base: $2.00 for first 3 pages
+    - Additional: $0.75 per page
+    - Cover page counts as 1 page
+    - Some destinations have different rates
+
+    **Check**:
+    - Count your pages carefully
+    - Verify if you included a cover page
+    - Look for blank pages
+    - Destination-specific pricing may apply
+
+    See [Pricing Structure](/pricing/pricing-structure) for examples.
+  </Accordion>
+</AccordionGroup>
+
+## Payment issues
+
+<AccordionGroup>
+  <Accordion title="Payment declined" icon="credit-card">
+    **Common reasons**:
+    - Insufficient funds
+    - Incorrect card details (number, CVV, ZIP)
+    - Card expired
+    - International transactions blocked
+    - Daily limit reached
+    - Fraud protection triggered
+
+    **Solutions**:
+    1. Verify all card details are correct
+    2. Check with your bank/card issuer
+    3. Try PayPal as alternative
+    4. Use a different card
+    5. Enable international transactions if outside US
+  </Accordion>
+
+  <Accordion title="I see a charge but my fax failed" icon="ban">
+    **This is likely an authorization hold**, not a permanent charge.
+
+    - Hold is placed when you submit
+    - Released if fax fails
+    - May take 1-7 days to clear
+
+    See [Payment Holds & Refunds](/pricing/payment-holds) for full explanation.
+
+    **If still showing after 7 days**: [Contact support](https://payperfax.com/contact-us/)
+  </Accordion>
+
+  <Accordion title="PayPal payment not working" icon="paypal">
+    **Possible issues**:
+    - Insufficient PayPal balance
+    - No linked funding source
+    - PayPal account limited/restricted
+    - Pop-up blocker preventing PayPal window
+
+    **Solutions**:
+    - Add funds to PayPal
+    - Link a bank account or card
+    - Resolve any PayPal account issues
+    - Allow pop-ups for payperfax.com
+    - Try direct credit card payment instead
+  </Accordion>
+</AccordionGroup>
+
+## Transmission issues
+
+<AccordionGroup>
+  <Accordion title="Fax failed - line busy" icon="phone-slash">
+    **Meaning**: Destination fax line was busy (after 3 attempts)
+
+    **What to do**:
+    - Wait 15-30 minutes and try again
+    - Verify the fax number is correct
+    - Contact recipient to ensure fax machine is on
+    - Ask if they're expecting high fax volume
+    - Try during different business hours
+  </Accordion>
+
+  <Accordion title="Fax failed - no answer" icon="phone-xmark">
+    **Meaning**: Destination fax machine didn't answer (after 3 attempts)
+
+    **Possible causes**:
+    - Fax machine is off
+    - Line is disconnected
+    - Incorrect fax number
+    - Line has voice call answering, not fax
+
+    **What to do**:
+    - Double-check the fax number
+    - Confirm with recipient their fax machine is on
+    - Verify it's a fax line (not voice line)
+    - Try during business hours
+  </Accordion>
+
+  <Accordion title="Fax failed - transmission error" icon="triangle-exclamation">
+    **Meaning**: Connection was interrupted during sending
+
+    **Possible causes**:
+    - Poor line quality at destination
+    - Recipient fax machine compatibility issue
+    - Paper jam or technical issue at destination
+
+    **What to do**:
+    - Try again (may succeed on retry)
+    - Ask recipient to check their fax machine
+    - Verify the number is correct
+    - Try simplifying your document (lower page count)
+  </Accordion>
+</AccordionGroup>
+
+## Browser issues
+
+<AccordionGroup>
+  <Accordion title="Page not loading or displaying incorrectly" icon="browser">
+    **Solutions**:
+    - Clear browser cache and cookies
+    - Try a different browser (Chrome, Firefox, Edge, Safari)
+    - Disable browser extensions temporarily
+    - Update your browser to latest version
+    - Try incognito/private mode
+    - Check for ad blocker interference
+  </Accordion>
+
+  <Accordion title="Can't click buttons or submit form" icon="mouse-pointer">
+    **Possible causes**:
+    - JavaScript disabled
+    - Browser extension conflict
+    - Ad blocker interference
+    - Outdated browser
+
+    **Solutions**:
+    - Enable JavaScript in browser settings
+    - Disable extensions one by one to find conflict
+    - Whitelist payperfax.com in ad blocker
+    - Update or switch browsers
+  </Accordion>
+</AccordionGroup>
+
+## Email confirmation issues
+
+<AccordionGroup>
+  <Accordion title="Didn't receive confirmation email" icon="envelope">
+    **Check**:
+    1. **Spam/junk folder** - most common cause
+    2. **Email address spelling** - was it correct when you entered it?
+    3. **Email server delays** - may take up to 15 minutes
+    4. **Promotions/updates folder** (Gmail)
+
+    **Solutions**:
+    - Add payperfax.com to safe senders list
+    - Check all email folders
+    - Wait 15-30 minutes
+    - Check the tracking page (if you saved it)
+
+    <Info>
+    You can still verify fax status via the tracking page without the email.
+    </Info>
+  </Accordion>
+
+  <Accordion title="Email confirmation looks corrupted" icon="file-circle-xmark">
+    **PDF attachment won't open**:
+    - Download and open with Adobe Reader
+    - Update your PDF viewer
+    - Try opening in browser
+    - Try on different device
+
+    **Email formatting broken**:
+    - View in different email client
+    - The PDF attachment is the important part
+  </Accordion>
+</AccordionGroup>
+
+## Still need help?
+
+<Card
+  title="Contact PayPerFax Support"
+  icon="headset"
+  href="https://payperfax.com/contact-us/"
+  horizontal
+>
+  Get assistance from our support team (Monday-Friday 09:00-17:00 GMT)
+</Card>
+
+**When contacting support, include**:
+- Description of the problem
+- Error messages (if any)
+- Date and time of issue
+- Email address used
+- Destination fax number
+- Browser and device information
+
+## Related topics
+
+<CardGroup cols={2}>
+  <Card
+    title="Fax Not Received"
+    icon="question"
+    href="/troubleshooting/fax-not-received"
+  >
+    Sent successfully but recipient didn't get it
+  </Card>
+  <Card
+    title="Low Quality Confirmations"
+    icon="image"
+    href="/troubleshooting/low-quality-confirmations"
+  >
+    Why faxes appear pixelated
+  </Card>
+  <Card
+    title="Resending Faxes"
+    icon="rotate"
+    href="/troubleshooting/resending-faxes"
+  >
+    How to send again
+  </Card>
+  <Card
+    title="FAQ"
+    icon="circle-question"
+    href="/faq"
+  >
+    Frequently asked questions
+  </Card>
+</CardGroup>
