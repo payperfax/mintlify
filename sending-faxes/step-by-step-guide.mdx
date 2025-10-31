@@ -1,0 +1,249 @@
+---
+title: "Step-by-Step Guide"
+description: "Complete instructions for sending a fax with PayPerFax"
+icon: "list-check"
+---
+
+This guide walks you through every step of sending a fax using PayPerFax, from entering the destination number to receiving confirmation.
+
+<Note>
+This process takes just a few minutes from start to finish.
+</Note>
+
+## Overview of the web form
+
+This is the basic PayPerFax web form where you'll enter your fax details:
+
+<img src="/images/webform_basic.png" alt="PayPerFax web form showing destination fax number and email fields" />
+
+## Step 1: Enter destination fax number and email
+
+<Steps>
+  <Step title="Select the destination country">
+    Click on the **flag icon** to select the country where you're sending the fax.
+
+    This ensures the proper country code and pricing.
+  </Step>
+
+  <Step title="Enter the fax number">
+    Type the destination fax number including the area code.
+
+    <Warning>Make sure to include the area code for domestic faxes.</Warning>
+  </Step>
+
+  <Step title="Enter your email address">
+    Provide an email address where you'll receive:
+    - Fax completion notification
+    - Transmission details
+    - PDF copy of the sent fax
+  </Step>
+</Steps>
+
+## Step 2: Optionally, compose a cover page
+
+A cover page is an optional text page that appears before your attached documents. It's useful for routing instructions or messages to the recipient.
+
+<Accordion title="How to add a cover page" icon="file-lines">
+1. Click the **"Attach a cover page"** checkbox
+2. Fill in the fields that appear:
+
+<img src="/images/webform_cover_page.png" alt="Cover page form fields" />
+
+The cover page fields typically include:
+- To (recipient name)
+- From (your name)
+- Company/organization
+- Subject
+- Message/notes
+
+<Tip>
+The cover page counts as **one page** toward your total page count and is included in the first 3 pages of the base price.
+</Tip>
+</Accordion>
+
+## Step 3: Optionally, attach files
+
+<Steps>
+  <Step title="Click 'Choose files'">
+    Select one or more files from your computer to attach to the fax.
+  </Step>
+
+  <Step title="Add multiple files">
+    You can click "Choose files" multiple times to attach several documents.
+
+    They will be faxed in the order you added them.
+  </Step>
+</Steps>
+
+**Accepted file types**: PDF, DOC, DOCX, TIF, JPEG
+**Maximum file size**: 8MB per upload
+
+<Info>
+Either a cover page **or** attached files (or both) must be provided to proceed. You cannot send a completely empty fax.
+</Info>
+
+See [File Requirements](/sending-faxes/file-requirements) for detailed specifications.
+
+## Step 4: Preview fax and check price
+
+Click the **"Preview fax & check price"** button to proceed to the preview page.
+
+<Accordion title="What happens during preview" icon="eye">
+PayPerFax will process your documents:
+- Convert files to fax format (204×196 dpi)
+- Count total pages
+- Calculate the exact price
+- Generate a preview of what will be sent
+
+<img src="/images/webform_preview.png" alt="Fax preview showing processed document and final price" />
+
+<Warning>
+Preview processing takes 30-60 seconds. Please be patient while we prepare your fax.
+</Warning>
+</Accordion>
+
+<Accordion title="Review the preview carefully" icon="magnifying-glass">
+Before proceeding to payment:
+- Check that all pages are included
+- Verify text is readable
+- Confirm the page count
+- Note the final price
+
+The price shown is **guaranteed** - this is exactly what you'll pay if the fax succeeds.
+</Accordion>
+
+## Step 5: Continue to payment
+
+Click **"Continue to payment"** when you're satisfied with the preview.
+
+<img src="/images/webform_payment.png" alt="Payment page with credit card and PayPal options" />
+
+<Accordion title="Choose your payment method" icon="credit-card">
+**Credit Card**:
+- Enter card details directly on the page
+- Secure processing via Stripe
+
+**PayPal**:
+- Click the PayPal button
+- Log into your PayPal account
+- Approve the payment
+</Accordion>
+
+<Accordion title="Understanding payment authorization" icon="shield">
+When you submit payment, a **temporary hold** is placed on your card for the fax amount.
+
+- **If fax succeeds**: The hold becomes a charge
+- **If fax fails**: The hold is released (you pay nothing)
+
+<Info>
+You will not see an immediate charge. The charge only appears after successful transmission.
+</Info>
+
+See [Payment Holds & Refunds](/pricing/payment-holds) for more details.
+</Accordion>
+
+## Step 6: Track your fax
+
+After payment authorization, you'll see the tracking page.
+
+<Accordion title="While fax is sending" icon="paper-plane">
+<img src="/images/webform_processing.png" alt="Tracking page showing fax in progress" />
+
+The tracking page shows real-time status:
+- **Queued**: Waiting to be sent
+- **Sending**: Currently transmitting
+
+<Tip>
+You don't need to stay on this page. A confirmation email will be sent when complete.
+</Tip>
+</Accordion>
+
+<Accordion title="When fax completes" icon="circle-check">
+<img src="/images/webform_complete.png" alt="Tracking page showing successful fax delivery" />
+
+The page updates to show:
+- Final status (success or failure)
+- Transmission date and time
+- Destination fax identifier (CSID)
+- Link to view/download confirmation
+</Accordion>
+
+## Step 7: Receive confirmation via email
+
+When your fax completes, you'll receive an email confirmation with:
+
+<img src="/images/emailed_fax_confirmation.png" alt="Email confirmation showing fax transmission details" />
+
+<CardGroup cols={2}>
+  <Card title="Transmission Details" icon="info">
+    - Date and time sent
+    - Destination fax number
+    - Remote fax identifier (CSID)
+    - Number of pages
+    - Final charge amount
+  </Card>
+  <Card title="PDF Attachment" icon="file-pdf">
+    Exact copy of what was sent to the recipient
+
+    Save this for your records
+  </Card>
+</CardGroup>
+
+## What if something goes wrong?
+
+<CardGroup cols={2}>
+  <Card
+    title="Fax Failed?"
+    icon="circle-xmark"
+    href="/troubleshooting/common-issues"
+  >
+    Understand why faxes fail and what to do
+  </Card>
+  <Card
+    title="Not Received?"
+    icon="question"
+    href="/troubleshooting/fax-not-received"
+  >
+    Your fax shows as sent but recipient didn't get it
+  </Card>
+  <Card
+    title="Looks Low Quality?"
+    icon="image"
+    href="/troubleshooting/low-quality-confirmations"
+  >
+    Why fax confirmations appear pixelated
+  </Card>
+  <Card
+    title="Need to Resend?"
+    icon="rotate"
+    href="/troubleshooting/resending-faxes"
+  >
+    How to resend a failed fax
+  </Card>
+</CardGroup>
+
+## Related topics
+
+<CardGroup cols={3}>
+  <Card
+    title="Cover Pages"
+    icon="file-lines"
+    href="/sending-faxes/cover-pages"
+  >
+    How to use cover pages effectively
+  </Card>
+  <Card
+    title="File Requirements"
+    icon="file"
+    href="/sending-faxes/file-requirements"
+  >
+    Supported formats and specifications
+  </Card>
+  <Card
+    title="Preview & Pricing"
+    icon="eye"
+    href="/sending-faxes/preview-and-pricing"
+  >
+    Understanding the preview process
+  </Card>
+</CardGroup>

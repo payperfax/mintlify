@@ -1,68 +1,64 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "PayPerFax Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563EB",
+    "light": "#60A5FA",
+    "dark": "#1E40AF"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started/quick-start",
+              "getting-started/how-it-works"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Sending Faxes",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "sending-faxes/step-by-step-guide",
+              "sending-faxes/cover-pages",
+              "sending-faxes/file-requirements",
+              "sending-faxes/preview-and-pricing"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Pricing & Payments",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "pricing/pricing-structure",
+              "pricing/payment-methods",
+              "pricing/payment-holds"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Features",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "features/service-features",
+              "features/country-coverage",
+              "features/browser-extension"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Troubleshooting",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "troubleshooting/common-issues",
+              "troubleshooting/fax-not-received",
+              "troubleshooting/low-quality-confirmations",
+              "troubleshooting/resending-faxes"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq"
             ]
           }
         ]
@@ -71,14 +67,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "PayPerFax Home",
+          "href": "https://payperfax.com",
+          "icon": "house"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Send a Fax",
+          "href": "https://app.payperfax.com",
+          "icon": "fax"
         }
       ]
     }
@@ -90,33 +86,27 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "About Us",
+        "href": "https://payperfax.com/about-us/"
+      },
+      {
+        "label": "Contact",
+        "href": "https://payperfax.com/contact-us/"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Send a Fax",
+      "href": "https://app.payperfax.com"
     }
   },
   "contextual": {
     "options": [
      "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
+     "view"
    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }

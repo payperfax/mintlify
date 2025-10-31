@@ -1,0 +1,273 @@
+---
+title: "Fax Marked as Sent But Not Received"
+description: "Understanding why successful transmission doesn't always mean immediate receipt"
+icon: "question"
+---
+
+Your fax shows as "sent successfully" but the recipient says they didn't receive it. This page explains why this happens and what to do.
+
+## Understanding "successful" transmission
+
+<Info>
+**"Successful" means the receiving fax machine confirmed receipt** - not that the recipient has the fax in hand.
+</Info>
+
+When PayPerFax reports success, it means:
+
+<Steps>
+  <Step title="Fax machine answered">
+    The destination fax line picked up the call
+  </Step>
+
+  <Step title="Handshake completed">
+    Both machines agreed on transmission parameters
+  </Step>
+
+  <Step title="Pages transmitted">
+    All pages were sent over the fax line
+  </Step>
+
+  <Step title="Receipt confirmed">
+    The receiving machine sent a confirmation signal (CSID)
+  </Step>
+</Steps>
+
+**This does NOT guarantee**:
+- The recipient checked their fax machine
+- The fax printed correctly
+- The fax was routed to the right person
+- The recipient received/read the fax
+
+## Common reasons recipients "didn't get it"
+
+<AccordionGroup>
+  <Accordion title="1. Fax is in the machine's tray" icon="inbox">
+    **Most common reason**
+
+    The fax printed successfully but:
+    - Nobody checked the fax machine yet
+    - Fax is buried under other received faxes
+    - Fax tray is full and fax fell behind/under machine
+    - After-hours delivery and not yet noticed
+
+    **What to do**: Ask recipient to physically check the fax machine and tray
+  </Accordion>
+
+  <Accordion title="2. Routing issue at destination" icon="route">
+    In large organizations with shared fax machines:
+    - Fax delivered but routed to wrong person/department
+    - Sitting in general mailroom
+    - Cover page didn't specify recipient clearly enough
+    - Internal mail system delay
+
+    **What to do**: Ask recipient to check with mail room or other departments
+  </Accordion>
+
+  <Accordion title="3. Print quality issues" icon="print">
+    The fax transmitted but printed poorly or blank due to:
+    - Out of toner/ink
+    - Paper jam during printing
+    - Receiving machine print head issues
+    - Fax machine saving to memory due to paper out
+
+    **What to do**: Ask recipient to check their fax machine display and print queue
+  </Accordion>
+
+  <Accordion title="4. Time zone confusion" icon="clock">
+    - Fax sent late at night (recipient's time)
+    - Next business day hasn't started yet
+    - Weekend delivery not checked yet
+
+    **What to do**: Wait until business hours in recipient's time zone
+  </Accordion>
+
+  <Accordion title="5. Fax to email service" icon="envelope">
+    If destination is a fax-to-email service:
+    - Email might be in spam/junk
+    - Email server delays
+    - Incorrect email configuration
+    - Service issues on their end
+
+    **What to do**: Ask recipient to check spam folder and fax-to-email service status
+  </Accordion>
+</AccordionGroup>
+
+## What the confirmation tells you
+
+Your confirmation email includes:
+
+<CardGroup cols={2}>
+  <Card title="Transmission Timestamp" icon="clock">
+    Exact date and time the fax was sent
+
+    Verify with recipient's time zone
+  </Card>
+  <Card title="Remote CSID" icon="fingerprint">
+    Called Subscriber Identification from receiving machine
+
+    Confirms the specific machine that received it
+  </Card>
+  <Card title="Page Count" icon="hashtag">
+    Number of pages transmitted
+
+    Ask recipient if they received this many pages
+  </Card>
+  <Card title="PDF Copy" icon="file-pdf">
+    Exact image of what was sent
+
+    Show this to recipient for comparison
+  </Card>
+</CardGroup>
+
+## Steps to resolve
+
+<Steps>
+  <Step title="Verify transmission success">
+    Check your confirmation email:
+    - Shows "Success" or "Delivered"?
+    - Has CSID (receiving machine identifier)?
+    - Includes PDF attachment?
+
+    If yes to all, transmission definitely completed.
+  </Step>
+
+  <Step title="Contact recipient directly">
+    Call or email the recipient:
+    - Ask them to physically check the fax machine
+    - Provide the date/time of transmission
+    - Give them the CSID if they have multiple fax lines
+    - Ask about their check their spam (if fax-to-email)
+  </Step>
+
+  <Step title="Share the PDF">
+    Send the PDF from your confirmation email to recipient via email as an alternative.
+
+    This proves:
+    - What was sent
+    - When it was sent
+    - That transmission completed
+  </Step>
+
+  <Step title="Wait and recheck">
+    If urgent, wait a few hours and ask recipient to check again:
+    - In-office mail distribution takes time
+    - Shared fax machines may have backlogs
+    - After-hours deliveries need business hours
+  </Step>
+
+  <Step title="Resend if necessary">
+    If truly lost:
+    - Resend the fax
+    - Use cover page with clear routing instructions
+    - Include attention to specific person/department
+    - Consider adding "RESEND" in subject
+
+    See [How to Resend](/troubleshooting/resending-faxes)
+  </Step>
+</Steps>
+
+## Technical explanation
+
+<Accordion title="Why 'sent' doesn't mean 'in hand'" icon="circle-info">
+Fax transmission works like postal mail:
+
+**PayPerFax's role** = Post office
+- We deliver to the destination mailbox (fax machine)
+- We confirm it was accepted by the mailbox
+- We provide proof of delivery
+
+**After delivery**:
+- Recipient must check their mailbox (fax tray)
+- Internal routing is their responsibility
+- Physical pickup is their responsibility
+
+We can prove it was delivered to their fax machine, but cannot control what happens after that.
+</Accordion>
+
+<Accordion title="The CSID proves delivery" icon="shield-check">
+The **Called Subscriber Identification (CSID)** in your confirmation is key evidence.
+
+This identifier comes from the receiving fax machine itself after successfully accepting all pages.
+
+**It's like a delivery signature** - proves the destination fax machine received and acknowledged your fax.
+
+<Note>
+If you have a CSID in your confirmation, transmission definitely completed to that specific fax machine.
+</Note>
+</Accordion>
+
+## What PayPerFax guarantees
+
+<CardGroup cols={2}>
+  <Card title="We Guarantee" icon="check" color="#16A34A">
+    ✅ Transmission to receiving fax machine
+    ✅ Handshake and receipt confirmation
+    ✅ All pages sent successfully
+    ✅ CSID received from destination
+    ✅ PDF proof of what was sent
+  </Card>
+  <Card title="We Cannot Control" icon="x" color="#EF4444">
+    ❌ Recipient checking their fax machine
+    ❌ Print quality at destination
+    ❌ Internal routing at large organizations
+    ❌ Recipient's fax machine toner/paper
+    ❌ Physical retrieval of printed fax
+  </Card>
+</CardGroup>
+
+## When to contact support
+
+[Contact PayPerFax support](https://payperfax.com/contact-us/) if:
+
+- Your confirmation shows "Failed" but recipient claims they got it
+- No CSID in confirmation but status shows "Success"
+- Confirmation email looks suspicious or incomplete
+- Need help interpreting technical details
+
+**For "sent but not received" scenarios**: This is typically a recipient-side issue. Share your confirmation email/PDF with them to help locate the fax.
+
+## Alternative delivery
+
+If the fax repeatedly shows as sent but recipient can't find it:
+
+<Accordion title="Send the PDF directly" icon="envelope">
+Use the PDF attachment from your confirmation email:
+1. Forward the email to recipient
+2. Upload PDF to shared file service
+3. Print PDF and mail it traditionally
+
+This bypasses their fax machine issues entirely.
+</Accordion>
+
+## Related topics
+
+<CardGroup cols={2}>
+  <Card
+    title="How It Works"
+    icon="circle-info"
+    href="/getting-started/how-it-works"
+  >
+    Understanding the fax process
+  </Card>
+  <Card
+    title="Resending Faxes"
+    icon="rotate"
+    href="/troubleshooting/resending-faxes"
+  >
+    How to send again if needed
+  </Card>
+  <Card
+    title="Common Issues"
+    icon="wrench"
+    href="/troubleshooting/common-issues"
+  >
+    Other troubleshooting topics
+  </Card>
+  <Card
+    title="FAQ"
+    icon="circle-question"
+    href="/faq"
+  >
+    Frequently asked questions
+  </Card>
+</CardGroup>

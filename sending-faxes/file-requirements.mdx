@@ -1,0 +1,290 @@
+---
+title: "File Requirements"
+description: "Supported file formats, size limits, and technical specifications"
+icon: "file"
+---
+
+PayPerFax accepts multiple file formats for faxing. Learn about the requirements and best practices for preparing your documents.
+
+## Supported file formats
+
+<CardGroup cols={4}>
+  <Card title="PDF" icon="file-pdf" color="#DC2626">
+    **Recommended**
+
+    Most reliable format
+  </Card>
+  <Card title="DOC/DOCX" icon="file-word" color="#2563EB">
+    **Word Documents**
+
+    Microsoft Word files
+  </Card>
+  <Card title="TIF/TIFF" icon="file-image" color="#7C3AED">
+    **Image Format**
+
+    G3 compression supported
+  </Card>
+  <Card title="JPG/JPEG" icon="file-image" color="#16A34A">
+    **Photo Format**
+
+    Image files
+  </Card>
+</CardGroup>
+
+## File size limits
+
+<Warning>
+**Maximum file size**: 8MB per upload
+
+Files larger than 8MB will be rejected.
+</Warning>
+
+<Tip>
+If you have a large document, consider:
+- Compressing the PDF
+- Splitting into multiple faxes
+- Reducing image quality/resolution before converting to PDF
+</Tip>
+
+## How to attach files
+
+<Steps>
+  <Step title="Click 'Choose files'">
+    On the PayPerFax web form, click the "Choose files" button
+  </Step>
+
+  <Step title="Select your file">
+    Browse your computer and select a file to upload
+  </Step>
+
+  <Step title="Add more files (optional)">
+    Click "Choose files" again to add additional documents
+
+    Files will be faxed in the order you added them
+  </Step>
+</Steps>
+
+<Info>
+You can attach multiple files. They'll be combined into a single fax in the order uploaded.
+</Info>
+
+## Format recommendations
+
+<AccordionGroup>
+  <Accordion title="PDF - Best choice" icon="file-pdf">
+    **Why PDF is best**:
+    - Most consistent conversion to fax format
+    - Preserves layout and formatting
+    - Works well with both text and images
+    - Widely compatible
+
+    **Tips**:
+    - Use black text on white background when possible
+    - Avoid complex graphics or colored backgrounds
+    - Test that text is readable at lower resolution
+  </Accordion>
+
+  <Accordion title="DOC/DOCX - Good for text" icon="file-word">
+    **Microsoft Word documents work well for**:
+    - Text-heavy documents
+    - Simple formatting
+    - Letters and forms
+
+    **Cautions**:
+    - Complex layouts may not convert perfectly
+    - Fonts may be substituted
+    - Embedded images should be high contrast
+
+    <Tip>
+    If your Word document has critical formatting, convert it to PDF first and review before faxing.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="TIF/TIFF - Native fax format" icon="file-image">
+    **TIFF is the native fax format**:
+    - G3 compression supported
+    - Black and white only
+    - Direct transmission without conversion
+
+    **When to use**:
+    - You already have fax-format files
+    - Receiving faxes electronically and forwarding them
+    - Maximum compatibility required
+  </Accordion>
+
+  <Accordion title="JPG/JPEG - For scanned documents" icon="file-image">
+    **JPEG works for**:
+    - Scanned documents
+    - Photos (though faxes are black & white)
+    - Images of forms or papers
+
+    **Tips**:
+    - Use high contrast (dark text, light background)
+    - Ensure text is sharp and readable
+    - Remember that colors will convert to grayscale
+  </Accordion>
+</AccordionGroup>
+
+## Technical specifications
+
+<Accordion title="Processing details" icon="gears">
+When you upload a file, PayPerFax:
+
+1. **Validates** the file format and size
+2. **Converts** to fax format (TIFF G3)
+3. **Processes** at fine quality: 204×196 dpi
+4. **Converts** to black and white (1-bit)
+5. **Generates** preview for your review
+
+This takes 30-60 seconds depending on document complexity.
+</Accordion>
+
+<Accordion title="Resolution: 204×196 dpi" icon="image">
+Fax standard resolution is **204×196 dots per inch (dpi)**.
+
+This is much lower than typical documents (300-600 dpi), which is why fax confirmations appear pixelated on modern screens.
+
+**Despite the low resolution**:
+- Text remains readable in 99% of cases
+- This is the universal fax standard worldwide
+- All fax machines use this resolution
+
+See [Why Confirmations Look Low Quality](/troubleshooting/low-quality-confirmations) for more information.
+</Accordion>
+
+<Accordion title="Black and white only" icon="palette">
+Fax technology transmits in **1-bit black and white** (not grayscale).
+
+**Color conversion**:
+- Colors are converted to grayscale first
+- Then converted to pure black or white (dithering)
+- Light colors may disappear
+- Dark colors become black
+
+<Warning>
+Avoid colored text on colored backgrounds - it may become unreadable.
+</Warning>
+</Accordion>
+
+## Preparing documents for faxing
+
+<Steps>
+  <Step title="Use high contrast">
+    - Black or dark text
+    - White or very light background
+    - Avoid gray text or watermarks
+  </Step>
+
+  <Step title="Keep layouts simple">
+    - Standard margins
+    - Single column when possible
+    - Avoid tiny fonts (12pt minimum recommended)
+  </Step>
+
+  <Step title="Test before faxing">
+    - Convert to grayscale on your computer
+    - Zoom out to simulate lower resolution
+    - Verify all text is readable
+  </Step>
+
+  <Step title="Combine multiple files">
+    If you have multiple documents:
+    - Either upload them separately (faxed in order)
+    - Or combine into a single PDF first
+  </Step>
+</Steps>
+
+## Common file issues
+
+<AccordionGroup>
+  <Accordion title="File too large (over 8MB)" icon="triangle-exclamation">
+    **Solutions**:
+    - Compress the PDF using online tools or Adobe Acrobat
+    - Reduce image quality in your PDF
+    - Split into multiple smaller faxes
+    - Remove unnecessary pages
+  </Accordion>
+
+  <Accordion title="Document looks different after processing" icon="eye">
+    **This is normal**: Fax format has lower resolution than modern documents.
+
+    - Text should still be readable
+    - Layout may shift slightly
+    - Fine details may be lost
+
+    Use the preview to verify readability before sending.
+  </Accordion>
+
+  <Accordion title="Colored document becomes unreadable" icon="palette">
+    **Problem**: Light colored text or backgrounds disappear
+
+    **Solution**: Convert to high-contrast black-on-white before faxing
+  </Accordion>
+
+  <Accordion title="File format not accepted" icon="ban">
+    **Not supported**:
+    - EPS, AI (vector graphics)
+    - PSD (Photoshop)
+    - RAW image formats
+    - Compressed archives (ZIP, RAR)
+
+    **Solution**: Convert to PDF, DOCX, or export as JPEG/TIFF
+  </Accordion>
+</AccordionGroup>
+
+## Multiple file handling
+
+When you attach multiple files:
+
+1. **Order matters**: Files are faxed in the order you added them
+2. **Combined into one fax**: All files become a single transmission
+3. **Total page count**: All pages from all files are summed for pricing
+4. **Preview shows all**: The preview displays the complete combined fax
+
+<Tip>
+If you need to change the order of files, you'll need to start over and upload them in the correct sequence.
+</Tip>
+
+## Minimum requirements
+
+<Warning>
+You must provide either:
+- At least one attached file, OR
+- A cover page, OR
+- Both
+
+You cannot send a completely empty fax.
+</Warning>
+
+## Related topics
+
+<CardGroup cols={2}>
+  <Card
+    title="Step-by-Step Guide"
+    icon="list-check"
+    href="/sending-faxes/step-by-step-guide"
+  >
+    Complete sending instructions
+  </Card>
+  <Card
+    title="Preview & Pricing"
+    icon="eye"
+    href="/sending-faxes/preview-and-pricing"
+  >
+    Review your converted document
+  </Card>
+  <Card
+    title="Low Quality Confirmations"
+    icon="image"
+    href="/troubleshooting/low-quality-confirmations"
+  >
+    Why faxes appear pixelated
+  </Card>
+  <Card
+    title="Cover Pages"
+    icon="file-lines"
+    href="/sending-faxes/cover-pages"
+  >
+    Add a text cover page
+  </Card>
+</CardGroup>
