@@ -107,20 +107,6 @@
    ]
   },
   "footer": {
-    "socials": {},
-    "links": [
-      {
-        "label": "Privacy Policy",
-        "href": "https://payperfax.com/policy/privacy/"
-      },
-      {
-        "label": "Terms of Service",
-        "href": "https://payperfax.com/policy/terms-of-service/"
-      },
-      {
-        "label": "Data Retention",
-        "href": "https://payperfax.com/policy/data-retention/"
-      }
-    ]
+    "socials": {}
   }
 }
