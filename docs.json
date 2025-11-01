@@ -26,16 +26,13 @@
             "pages": [
               "sending-faxes/step-by-step-guide",
               "sending-faxes/cover-pages",
-              "sending-faxes/file-requirements",
-              "sending-faxes/preview-and-pricing"
+              "sending-faxes/file-requirements"
             ]
           },
           {
             "group": "Pricing & Payments",
             "pages": [
-              "pricing/pricing-structure",
-              "pricing/payment-methods",
-              "pricing/payment-holds"
+              "pricing/pricing"
             ]
           },
           {
