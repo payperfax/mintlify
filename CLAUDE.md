@@ -9,17 +9,6 @@ This is a Mintlify-based documentation site for [PayPerFax.com](https://payperfa
 - **No code samples** - Text and images only, focused on user instructions
 - **Content sources**: payperfax.com/user-guide/, /faq/, /llms.txt
 
-## Documentation Structure
-
-The site is organized into 6 main sections:
-
-1. **Getting Started** - Quick start and "How it works"
-2. **Sending Faxes** - Step-by-step guides, cover pages, file requirements
-3. **Pricing & Payments** - Single consolidated page
-4. **Features** - Service features, country coverage, browser extension
-5. **Troubleshooting** - Hub-and-spoke model with common issues linking to specific guides
-6. **FAQ** - Frequently asked questions in accordion format
-
 ## Design Principles
 
 Based on user feedback, prioritize:
