@@ -175,31 +175,10 @@ See the [Country Coverage](/features/country-coverage) page for more details.
 <Warning>
 **You are only charged if your fax successfully transmits.**
 
-- **Success** = receiving fax machine answered and confirmed receipt
-- **Failure** = no charge, hold is released from your account
+A temporary authorization hold is placed when you submit. If the fax succeeds, you're charged. If it fails, the hold is released.
+
+See [Payment Holds & Refunds](/pricing/payment-holds) for complete details on how this works.
 </Warning>
-
-### How it works
-
-<Steps>
-  <Step title="Authorization hold">
-    When you submit your fax, a temporary hold is placed on your credit card or PayPal account for the fax cost
-  </Step>
-
-  <Step title="Transmission attempt">
-    PayPerFax attempts to send your fax (with automatic retries if needed)
-  </Step>
-
-  <Step title="Success: Charge applied">
-    If the fax transmits successfully, the hold becomes an actual charge
-  </Step>
-
-  <Step title="Failure: Hold released">
-    If the fax fails (after 3 attempts), the hold is released and you pay nothing
-  </Step>
-</Steps>
-
-See [Payment Holds & Refunds](/pricing/payment-holds) for more details.
 
 ## Currency
 
