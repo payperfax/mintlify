@@ -40,7 +40,8 @@
             "pages": [
               "features/service-features",
               "features/country-coverage",
-              "features/browser-extension"
+              "features/browser-extension",
+              "features/dropbox-integration"
             ]
           },
           {
