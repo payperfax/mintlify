@@ -117,7 +117,7 @@ When you preview your fax, the exact price for your specific destination is calc
 </Tabs>
 
 <Info>
-**International payments accepted.** Pay from any country with credit card or PayPal. Prices are displayed and charged in your local currency (USD, EUR, GBP, or JPY).
+**International payments accepted.** Pay from any country with credit card or PayPal. Prices are automatically displayed and charged in your region's local currency.
 </Info>
 
 ## How Payment Works
@@ -166,10 +166,10 @@ Some do, some don't. If declined, try:
 ## Currency & Receipts
 
 <CardGroup cols={2}>
-  <Card title="Multi-Currency" icon="coins">
-    Prices displayed in your **local currency**
+  <Card title="Local Currency" icon="coins">
+    Prices shown in your **local currency**
 
-    Supports USD, EUR, GBP, JPY based on your location
+    Automatically detected based on where you access the service
   </Card>
   <Card title="Receipts" icon="receipt">
     Included in confirmation email
@@ -179,7 +179,13 @@ Some do, some don't. If declined, try:
 </CardGroup>
 
 <Info>
-PayPerFax automatically detects your location and displays prices in your local currency. You'll be charged in that currency - no conversion surprises.
+PayPerFax automatically displays prices in the most natural currency for your region:
+- **USD** - North America
+- **EUR** - Europe
+- **GBP** - Britain and territories
+- **JPY** - Japan
+
+You'll be charged in that currency - no conversion surprises.
 </Info>
 
 ## Price Comparison
