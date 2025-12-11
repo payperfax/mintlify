@@ -6,6 +6,34 @@ icon: "rotate"
 
 If your fax failed or you need to send it again, here's what you need to know about PayPerFax's retry system and how to resubmit.
 
+## One-Click Resubmit
+
+<Info>
+PayPerFax now offers **One-Click Resubmit** - easily resend any fax within 72 hours without re-entering details.
+</Info>
+
+After sending a fax, you'll find a resubmit link in two places:
+- **Confirmation page** (both success and failure pages)
+- **Confirmation email**
+
+Clicking this link takes you to a pre-populated fax form with all your previous details:
+- Destination fax number
+- Your email address
+- Attached documents
+- Cover page (if used)
+
+<Tip>
+**Use cases for One-Click Resubmit:**
+- Fax failed after 3 automatic attempts
+- Recipient asks you to resend
+- Need to send the same fax to another recipient (just change the number)
+- Sent successfully but recipient lost it
+</Tip>
+
+<Warning>
+The resubmit link expires after **72 hours**. After that, you'll need to start a new fax from scratch.
+</Warning>
+
 ## Automatic retry system
 
 <Info>
@@ -40,33 +68,22 @@ Common temporary failures that retries can solve:
 
 ## If fax fails after 3 attempts
 
-<Warning>
-PayPerFax cannot resend your fax automatically or on request.
+When a fax fails after all automatic attempts, you have two options:
 
-If your fax fails after all automatic attempts, you must **start over** and submit a new fax.
-</Warning>
+<CardGroup cols={2}>
+  <Card title="One-Click Resubmit" icon="rotate" color="#16A34A">
+    Use the resubmit link in your failure email or confirmation page (available for 72 hours)
+  </Card>
+  <Card title="Start Fresh" icon="plus" color="#2563EB">
+    Begin a new fax at [app.payperfax.com](https://app.payperfax.com) if the link has expired
+  </Card>
+</CardGroup>
 
-### Why no manual resend?
-
-<Accordion title="No-registration service limitation" icon="user-slash">
-PayPerFax doesn't require accounts or registration, which means:
-- No login system
-- No stored fax history on servers
-- No "my faxes" dashboard
-- No way to verify who you are for a resend request
-
-**This is a trade-off**: The convenience of no registration means no ability to manually retry failed faxes.
-
-<Tip>
-If you frequently need to resend faxes, consider a subscription-based service with account features.
-</Tip>
-</Accordion>
-
-## How to resubmit a failed fax
+## Before resubmitting
 
 <Steps>
   <Step title="Check the failure reason">
-    Your failure notification email should explain why:
+    Your failure notification email explains why it failed:
     - **Line busy**: Destination was constantly busy
     - **No answer**: Fax machine didn't pick up
     - **Transmission error**: Connection dropped during sending
@@ -95,20 +112,12 @@ If you frequently need to resend faxes, consider a subscription-based service wi
     Contact recipient to confirm the number if uncertain.
   </Step>
 
-  <Step title="Start over on PayPerFax">
-    Visit [app.payperfax.com](https://app.payperfax.com) and:
-    1. Enter destination and email
-    2. Upload the same files or recreate cover page
-    3. Preview and confirm
-    4. Pay again
+  <Step title="Resubmit">
+    Click the resubmit link from your email or confirmation page. Your details will be pre-filled - just review and pay.
 
-    Your previous failed attempt cost nothing, so you're starting fresh.
-  </Step>
-
-  <Step title="Monitor the new attempt">
-    Watch the tracking page or wait for email confirmation
-
-    The new fax gets its own 3 automatic retry attempts
+    <Tip>
+    You can edit any field before resubmitting (e.g., fix the fax number if it was wrong).
+    </Tip>
   </Step>
 </Steps>
 
@@ -274,8 +283,8 @@ Each fax submission is independent:
     No action needed during automatic retries
   </Step>
 
-  <Step title="If all 3 fail, you must resubmit manually">
-    No stored faxes to resend - start over on the website
+  <Step title="If all 3 fail, use One-Click Resubmit">
+    Click the resubmit link in your email or confirmation page (valid for 72 hours)
   </Step>
 
   <Step title="You weren't charged for the failure">
@@ -286,8 +295,8 @@ Each fax submission is independent:
     Wait, verify number, contact recipient
   </Step>
 
-  <Step title="Submit as a new fax">
-    Goes through same preview/payment/send process
+  <Step title="Review and pay">
+    Your details are pre-filled - just confirm and pay
   </Step>
 </Steps>
 

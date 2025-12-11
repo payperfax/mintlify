@@ -26,6 +26,10 @@ Based on user feedback, prioritize:
 
 4. **Brief integrations** - When merging content, keep it concise
 
+## Codebase Summary
+
+See `.claude/codebase-summary.md` for a detailed analysis of the file structure, navigation, patterns, and conventions used in this documentation site.
+
 ## Technical Details
 
 **Platform:** Mintlify (MDX-based documentation)

@@ -77,6 +77,11 @@ PayPerFax does not store your credit card numbers or payment details.
 
     PDF, DOC, DOCX, TIF, JPEG all supported
   </Card>
+  <Card title="One-Click Resubmit" icon="rotate">
+    **Easily resend faxes**
+
+    Resubmit any fax within 72 hours via link in confirmation email
+  </Card>
   <Card title="Dropbox Integration" icon="dropbox">
     **Fax from cloud storage**
 
@@ -119,13 +124,14 @@ No need to wonder if your fax went through.
 <Accordion title="Email Confirmations" icon="envelope">
 Receive detailed email notifications when your fax completes:
 - **Success**: Confirmation with transmission details
-- **Failure**: Notification explaining why it failed
+- **Failure**: Notification explaining why it failed (including number of delivery attempts made)
 
 Includes:
-- Date and time
+- Date and time in your local timezone
 - Destination details (CSID)
 - PDF copy of transmitted fax
 - Transaction details
+- One-click resubmit link (valid for 72 hours)
 </Accordion>
 
 <Accordion title="Fine Quality Transmission" icon="image">
@@ -221,11 +227,11 @@ See [Browser Extension](/features/browser-extension) for details.
   <Card title="PayPal" icon="paypal">
     PayPal balance, linked bank accounts, or PayPal Credit
   </Card>
+  <Card title="Multi-Currency" icon="coins">
+    Prices in USD, EUR, GBP, or JPY based on your location
+  </Card>
   <Card title="Authorization Holds" icon="shield">
     Temporary hold placed - only charged on success
-  </Card>
-  <Card title="International Cards" icon="globe">
-    Accepts cards from anywhere in the world
   </Card>
 </CardGroup>
 
