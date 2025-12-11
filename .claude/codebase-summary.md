@@ -150,5 +150,5 @@ Standard pattern:
 
 - **Pricing**: "$2.00 for 3 pages, $0.75 per additional page"
 - **Trust elements**: SSL, auto-deletion, Trustpilot rating (4.7★)
-- **CTA**: "Send a Fax" buttons link to https://app.payperfax.com
+- **CTA**: "Send a Fax" buttons link to https://fax.payperfax.com
 - **No API documentation** - purely end-user/customer-facing

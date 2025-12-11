@@ -7,7 +7,7 @@ Official documentation for PayPerFax.com - the pay-per-use online fax service.
 PayPerFax enables instant fax transmission to 130+ countries without registration or subscription. Send faxes online and only pay if your fax succeeds.
 
 - **Website**: https://payperfax.com
-- **App**: https://app.payperfax.com
+- **App**: https://fax.payperfax.com
 - **Docs**: https://docs.payperfax.com (this documentation site)
 
 ## Documentation Structure
