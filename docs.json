@@ -41,7 +41,8 @@
               "features/service-features",
               "features/country-coverage",
               "features/browser-extension",
-              "features/dropbox-integration"
+              "features/dropbox-integration",
+              "features/google-drive-integration"
             ]
           },
           {

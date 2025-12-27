@@ -1,32 +1,19 @@
 ---
-title: "Dropbox Integration"
-description: "Send faxes directly from Dropbox without downloads"
-icon: "dropbox"
+title: "Google Drive Integration"
+description: "Send faxes directly from Google Drive without downloads"
+icon: "google-drive"
 ---
 
-The PayPerFax Dropbox integration lets you send faxes directly from your Dropbox account without downloading files or switching between apps.
-
-## Add to Dropbox
-
-<CardGroup cols={1}>
-  <Card
-    title="Fax via PayPerFax"
-    icon="dropbox"
-    href="https://www.dropbox.com/oauth2/authorize?client_id=iofkfoevxf7tgd6&redirect_uri=https%3A%2F%2Ffax.payperfax.com%2Fauth%2Fdropbox%2Fcallback&response_type=code&token_access_type=offline"
-    color="#0061FF"
-  >
-    Install the Dropbox integration with one click
-  </Card>
-</CardGroup>
+The PayPerFax Google Drive integration lets you send faxes directly from your Google Drive account without downloading files or switching between apps.
 
 ## Key features
 
 <CardGroup cols={3}>
-  <Card title="Send Without Leaving Dropbox" icon="mouse-pointer" color="#2563EB">
+  <Card title="Send Without Leaving Drive" icon="mouse-pointer" color="#2563EB">
     Right-click any supported file and send it as a fax in seconds
   </Card>
   <Card title="Secure OAuth Authorization" icon="shield-check" color="#16A34A">
-    Connect your Dropbox once through secure OAuth. Your files stay private.
+    Connect your Google Drive once through secure OAuth. Your files stay private.
   </Card>
   <Card title="Pay Only on Success" icon="dollar-sign" color="#F59E0B">
     Like all PayPerFax services, you only pay when your fax transmits successfully
@@ -36,12 +23,12 @@ The PayPerFax Dropbox integration lets you send faxes directly from your Dropbox
 ## How it works
 
 <Steps>
-  <Step title="Right-click and share">
-    Navigate to any folder in dropbox.com containing a PDF, DOC, DOCX, JPG, or TIF file. Right-click the file you want to fax, select "Share" from the context menu, then choose "Fax via PayPerFax".
+  <Step title="Right-click and open with PayPerFax">
+    Navigate to any folder in Google Drive containing a PDF, DOC, DOCX, JPG, or TIF file. Right-click the file you want to fax, select "Open with," then choose "PayPerFax".
   </Step>
 
   <Step title="Authorize on first use">
-    The first time you use the service, you'll authorize PayPerFax to access your Dropbox files through a secure OAuth connection. This one-time authorization takes seconds and ensures your files remain private.
+    The first time you use the service, you'll authorize PayPerFax to access your Google Drive files through a secure OAuth connection. This one-time authorization takes seconds and ensures your files remain private.
   </Step>
 
   <Step title="Enter number, preview, and pay">
@@ -49,15 +36,15 @@ The PayPerFax Dropbox integration lets you send faxes directly from your Dropbox
   </Step>
 </Steps>
 
-## Why use the Dropbox integration?
+## Why use the Google Drive integration?
 
 <AccordionGroup>
   <Accordion title="No file downloads" icon="download">
-    Keep your workflow in Dropbox without the usual download-upload cycle. Send faxes directly from your cloud storage.
+    Keep your workflow in Google Drive without the usual download-upload cycle. Send faxes directly from your cloud storage.
   </Accordion>
 
   <Accordion title="Supported file formats" icon="file">
-    Works with PDF, DOC, DOCX, JPG, and TIF files stored in your Dropbox. Same format support as the main PayPerFax service.
+    Works with PDF, DOC, DOCX, JPG, and TIF files stored in your Google Drive. Same format support as the main PayPerFax service.
 
     <Info>
     For detailed file requirements, see [File Requirements](/sending-faxes/file-requirements).
@@ -68,9 +55,9 @@ The PayPerFax Dropbox integration lets you send faxes directly from your Dropbox
     Connect once through secure OAuth, then fax whenever you need. No repeated logins or authorizations required.
 
     **How OAuth works:**
-    - PayPerFax never sees your Dropbox password
+    - PayPerFax never sees your Google password
     - You control which files PayPerFax can access
-    - You can revoke access anytime from your Dropbox settings
+    - You can revoke access anytime from your Google account settings
   </Accordion>
 
   <Accordion title="Transparent pricing" icon="tag">
@@ -97,18 +84,18 @@ The PayPerFax Dropbox integration lets you send faxes directly from your Dropbox
 
 ## Security & privacy
 
-<Accordion title="How secure is the Dropbox integration?" icon="lock">
-PayPerFax uses industry-standard OAuth 2.0 to connect with Dropbox:
+<Accordion title="How secure is the Google Drive integration?" icon="lock">
+PayPerFax uses industry-standard OAuth 2.0 to connect with Google Drive:
 
 **What this means:**
-- PayPerFax never has access to your Dropbox password
+- PayPerFax never has access to your Google password
 - You explicitly authorize which files PayPerFax can access
-- You can revoke access at any time from your Dropbox account settings
+- You can revoke access at any time from your Google account settings
 - All file transfers are encrypted with SSL
 
 **What PayPerFax accesses:**
 - Only files you explicitly choose to fax
-- No other files in your Dropbox
+- No other files in your Google Drive
 - No folder browsing or file listing
 
 **Data retention:**
@@ -119,19 +106,19 @@ See [Service Features](/features/service-features) for complete security details
 </Info>
 </Accordion>
 
-## Dropbox vs. manual upload
+## Google Drive vs. manual upload
 
 <CardGroup cols={2}>
-  <Card title="Dropbox Integration" icon="dropbox">
+  <Card title="Google Drive Integration" icon="google-drive">
     **Advantages:**
     - No file downloads needed
     - Streamlined workflow
-    - Stay in Dropbox interface
+    - Stay in Google Drive interface
     - Right-click convenience
 
     **Considerations:**
     - Requires one-time OAuth authorization
-    - Only works with dropbox.com (not desktop app)
+    - Only works with drive.google.com (not desktop app)
   </Card>
 
   <Card title="Manual Upload" icon="browser">
@@ -154,13 +141,13 @@ Both methods offer the same pricing, reliability, and pay-on-success guarantee. 
 ## Frequently asked questions
 
 <AccordionGroup>
-  <Accordion title="Does this work with the Dropbox desktop app?" icon="desktop">
-    No, the integration currently only works through the Dropbox website (dropbox.com). You need to use your web browser to access the right-click menu option.
+  <Accordion title="Does this work with the Google Drive desktop app?" icon="desktop">
+    No, the integration currently only works through the Google Drive website (drive.google.com). You need to use your web browser to access the right-click menu option.
   </Accordion>
 
   <Accordion title="Can I revoke access later?" icon="ban">
-    Yes. You can revoke PayPerFax's access to your Dropbox at any time:
-    1. Go to dropbox.com/account/connected_apps
+    Yes. You can revoke PayPerFax's access to your Google Drive at any time:
+    1. Go to myaccount.google.com/permissions
     2. Find "PayPerFax" in the list
     3. Click "Remove access"
 
@@ -168,34 +155,27 @@ Both methods offer the same pricing, reliability, and pay-on-success guarantee. 
   </Accordion>
 
   <Accordion title="What file size limits apply?" icon="weight-scale">
-    The same 8MB file size limit applies as with manual uploads. If your Dropbox file exceeds 8MB, consider compressing it or splitting it into multiple faxes.
+    The same 8MB file size limit applies as with manual uploads. If your Google Drive file exceeds 8MB, consider compressing it or splitting it into multiple faxes.
   </Accordion>
 
-  <Accordion title="Do I need a Dropbox paid account?" icon="circle-question">
-    No. The PayPerFax integration works with free Dropbox accounts and all paid Dropbox plans.
+  <Accordion title="Do I need a Google Workspace account?" icon="circle-question">
+    No. The PayPerFax integration works with free Google accounts and all Google Workspace plans.
   </Accordion>
 </AccordionGroup>
 
 ## Get started
 
-<Card
-  title="Add to Dropbox"
-  icon="dropbox"
-  href="https://www.dropbox.com/oauth2/authorize?client_id=iofkfoevxf7tgd6&redirect_uri=https%3A%2F%2Ffax.payperfax.com%2Fauth%2Fdropbox%2Fcallback&response_type=code&token_access_type=offline"
-  horizontal
->
-  Connect your Dropbox account and start faxing in seconds
-</Card>
+Visit [payperfax.com/fax-from-google-drive](https://payperfax.com/fax-from-google-drive/) for setup instructions.
 
 ## Related topics
 
 <CardGroup cols={2}>
   <Card
-    title="Google Drive Integration"
-    icon="google-drive"
-    href="/features/google-drive-integration"
+    title="Dropbox Integration"
+    icon="dropbox"
+    href="/features/dropbox-integration"
   >
-    Send faxes directly from Google Drive
+    Send faxes directly from Dropbox
   </Card>
   <Card
     title="Browser Extension"
