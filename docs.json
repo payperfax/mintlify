@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "PayPerFax Documentation",
   "colors": {
     "primary": "#2563EB",
