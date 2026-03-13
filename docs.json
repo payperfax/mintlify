@@ -107,5 +107,8 @@
   },
   "footer": {
     "socials": {}
+  },
+  "background": {
+    "decoration": "grid"
   }
 }
