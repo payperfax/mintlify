@@ -78,10 +78,7 @@
       ]
     }
   },
-  "logo": {
-    "light": "/logo/ppf_logo.png",
-    "dark": "/logo/ppf_logo.png"
-  },
+  "logo": "/images/robot_plain_750_flipped.png",
   "navbar": {
     "links": [
       {
